@@ -18,7 +18,7 @@ const Header = () => {
   const { imageSharp } = useStaticQuery(graphql`
     query ImageLogo {
       imageSharp(id: { eq: "5ae7ea25-f5ac-501c-9e21-2eec48cacfa3" }) {
-        resize(height: 128) {
+        original {
           src
         }
       }
@@ -28,7 +28,7 @@ const Header = () => {
   return (
     <header>
       <LogoContainer>
-        <Logo src={imageSharp.resize.src} alt="Plantree" />
+        <Logo src={imageSharp.original.src} alt="Plantree" />
       </LogoContainer>
     </header>
   )
