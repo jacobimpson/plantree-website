@@ -46,6 +46,14 @@ const PrivacyPolicy = () => (
         free to contact us.
       </p>
       <p>This policy is effective as of 4 March 2019.</p>
+
+      <hr />
+
+      <h2>Support</h2>
+      <p>
+        If you have any questions or feedback, feel free to contact{" "}
+        <a href="mailto:plantree.app@gmail.com">plantree.app@gmail.com</a>
+      </p>
     </section>
   </Layout>
 )
